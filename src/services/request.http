@@ -1,0 +1,47 @@
+### GET 
+
+GET http://localhost:5000/api/vets
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNWYxMWM1YjM1MTEyYTZjZDM1YTM2MiIsInJvbGUiOiJzdXBlcmFkbWluIiwidGFza3MiOlsiaG9tZSIsImFib3V0IiwicHJvZHVjdCIsImNvbnRhY3QiXSwiaWF0IjoxNjMzNzYyNDI5LCJleHAiOjE2MzM4NDg4Mjl9.gO_miWvr2iKU79f3d6SZOpxZAFeOBXqhYtlnzMWfHfQ
+
+###~GET AlL de VETS
+
+GET http://localhost:5000/api/vets/all
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNWYxMWM1YjM1MTEyYTZjZDM1YTM2MiIsInJvbGUiOiJzdXBlcmFkbWluIiwidGFza3MiOlsiaG9tZSIsImFib3V0IiwicHJvZHVjdCIsImNvbnRhY3QiXSwiaWF0IjoxNjMzNzYyNDI5LCJleHAiOjE2MzM4NDg4Mjl9.gO_miWvr2iKU79f3d6SZOpxZAFeOBXqhYtlnzMWfHfQ
+
+#### GET CON PAGINAS
+GET http://localhost:5000/api/vets/?page[num]=2&page[size]=1
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNWYxMWM1YjM1MTEyYTZjZDM1YTM2MiIsInJvbGUiOiJzdXBlcmFkbWluIiwidGFza3MiOlsiaG9tZSIsImFib3V0IiwicHJvZHVjdCIsImNvbnRhY3QiXSwiaWF0IjoxNjMzNzYyNDI5LCJleHAiOjE2MzM4NDg4Mjl9.gO_miWvr2iKU79f3d6SZOpxZAFeOBXqhYtlnzMWfHfQ
+
+
+######
+
+POST http://localhost:5000/api/auth/signin
+Content-Type: application/json
+
+{
+    "email": "superadmin@localhost",
+    "password": "superadmin"
+}
+
+###### POST 
+
+POST http://localhost:5000/api/vets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNWYxMWM1YjM1MTEyYTZjZDM1YTM2MiIsInJvbGUiOiJzdXBlcmFkbWluIiwidGFza3MiOlsiaG9tZSIsImFib3V0IiwicHJvZHVjdCIsImNvbnRhY3QiXSwiaWF0IjoxNjMzNzYyNDI5LCJleHAiOjE2MzM4NDg4Mjl9.gO_miWvr2iKU79f3d6SZOpxZAFeOBXqhYtlnzMWfHfQ
+Content-Type: application/json
+
+{
+    "name": "Veterinaria Prueba",
+    "username": "Admin7",
+    "email": "admin7@gmail.com",
+    "password": "password"
+}
+##### GET VET BY ID 
+
+GET http://localhost:5000/api/vets/6161bfd2a5b4d3bb57c9b356
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNWYxMWM1YjM1MTEyYTZjZDM1YTM2MiIsInJvbGUiOiJzdXBlcmFkbWluIiwidGFza3MiOlsiaG9tZSIsImFib3V0IiwicHJvZHVjdCIsImNvbnRhY3QiXSwiaWF0IjoxNjMzNzYyNDI5LCJleHAiOjE2MzM4NDg4Mjl9.gO_miWvr2iKU79f3d6SZOpxZAFeOBXqhYtlnzMWfHfQ
+
+
+### GET USER
+
+GET http://localhost:5000/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNWYxMWM1YjM1MTEyYTZjZDM1YTM2MiIsInJvbGUiOiJzdXBlcmFkbWluIiwidGFza3MiOlsiaG9tZSIsImFib3V0IiwicHJvZHVjdCIsImNvbnRhY3QiXSwiaWF0IjoxNjMzNzYyNDI5LCJleHAiOjE2MzM4NDg4Mjl9.gO_miWvr2iKU79f3d6SZOpxZAFeOBXqhYtlnzMWfHfQ
